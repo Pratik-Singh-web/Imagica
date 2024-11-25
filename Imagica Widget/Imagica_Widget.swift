@@ -10,44 +10,55 @@ import SwiftUI
 
 struct Provider: AppIntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationAppIntent())
+        SimpleEntry(date: Date(), image: UIImage(named: "Myself"), configuration: ConfigurationAppIntent())
     }
 
     func snapshot(for configuration: ConfigurationAppIntent, in context: Context) async -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: configuration)
+        SimpleEntry(date: Date(), image: UIImage(named: "Myself"), configuration: configuration)
     }
     
     func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<SimpleEntry> {
         var entries: [SimpleEntry] = []
 
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
-            entries.append(entry)
-        }
+        let nextUpdateDate = Calendar.current.date(byAdding: .day, value: 1, to: currentDate)!
 
-        return Timeline(entries: entries, policy: .atEnd)
+        let image = await fetchDailyImage()
+
+        let entry = SimpleEntry(date: currentDate, image: image, configuration: configuration)
+        entries.append(entry)
+
+        return Timeline(entries: entries, policy: .after(nextUpdateDate))
+    }
+
+    func fetchDailyImage() async -> UIImage? {
+        let image = UIImage(named: "Myself")
+        return image
     }
 }
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
+    let image: UIImage?
     let configuration: ConfigurationAppIntent
 }
 
-struct Imagica_WidgetEntryView : View {
+struct Imagica_WidgetEntryView: View {
     var entry: Provider.Entry
 
     var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-
-            Text("Favorite Emoji:")
-            Text(entry.configuration.favoriteEmoji)
+        ZStack {
+            if let image = entry.image {
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .clipped()
+            } else {
+                Color.gray
+            }
         }
+        .containerRelativeFrame(.horizontal) // Removes padding
     }
 }
 
@@ -59,6 +70,7 @@ struct Imagica_Widget: Widget {
             Imagica_WidgetEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
+        .supportedFamilies([.systemLarge])
     }
 }
 
@@ -76,9 +88,10 @@ extension ConfigurationAppIntent {
     }
 }
 
-#Preview(as: .systemSmall) {
+#Preview(as: .systemLarge) {
     Imagica_Widget()
 } timeline: {
-    SimpleEntry(date: .now, configuration: .smiley)
-    SimpleEntry(date: .now, configuration: .starEyes)
+    SimpleEntry(date: .now, image: UIImage(named: "Myself"), configuration: .smiley)
+    SimpleEntry(date: .now, image: UIImage(systemName: "star.fill"), configuration: .starEyes)
 }
+

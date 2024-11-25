@@ -9,7 +9,15 @@ import SwiftUI
 
 struct HomeScreenView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack(spacing: 20){
+                // Preferred Category Section
+                PreferredCategoryView()
+                
+                // Recommended Categories Section
+                RecommendedCategoryView()
+            }
+        }
     }
 }
 

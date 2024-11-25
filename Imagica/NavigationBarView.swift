@@ -9,7 +9,35 @@ import SwiftUI
 
 struct NavigationBarView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack {
+            Button(action: {
+                // Add action for menu button
+            }) {
+                Image(systemName: "line.horizontal.3")
+                    .font(.system(size: 20))
+                    .foregroundColor(.black)
+            }
+            
+            Spacer()
+            
+            Text("Imagica")
+                .font(.title2)
+                .fontWeight(.bold)
+                .foregroundColor(.black)
+            
+            Spacer()
+            
+            Button(action: {
+                // Add action for profile button
+            }) {
+                Image(systemName: "person.crop.circle")
+                    .font(.system(size: 20))
+                    .foregroundColor(.black)
+            }
+        }
+        .padding(.horizontal)
+        .padding(.top, 10)
     }
 }
 

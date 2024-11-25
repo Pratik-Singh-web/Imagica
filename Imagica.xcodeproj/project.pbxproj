@@ -8,17 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		7097BF2E2CE2319D00F4BB90 /* ImagicaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BF2D2CE2319D00F4BB90 /* ImagicaApp.swift */; };
-		7097BF302CE2319D00F4BB90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BF2F2CE2319D00F4BB90 /* ContentView.swift */; };
+		7097BF302CE2319D00F4BB90 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BF2F2CE2319D00F4BB90 /* HomeView.swift */; };
 		7097BF322CE2319E00F4BB90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7097BF312CE2319E00F4BB90 /* Assets.xcassets */; };
 		7097BF352CE2319E00F4BB90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7097BF342CE2319E00F4BB90 /* Preview Assets.xcassets */; };
+		7097BF422CE2355B00F4BB90 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7097BF412CE2355B00F4BB90 /* WidgetKit.framework */; };
+		7097BF442CE2355B00F4BB90 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7097BF432CE2355B00F4BB90 /* SwiftUI.framework */; };
+		7097BF472CE2355B00F4BB90 /* Imagica_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BF462CE2355B00F4BB90 /* Imagica_WidgetBundle.swift */; };
+		7097BF492CE2355B00F4BB90 /* Imagica_WidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BF482CE2355B00F4BB90 /* Imagica_WidgetLiveActivity.swift */; };
+		7097BF4B2CE2355B00F4BB90 /* Imagica_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BF4A2CE2355B00F4BB90 /* Imagica_Widget.swift */; };
+		7097BF4D2CE2355B00F4BB90 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BF4C2CE2355B00F4BB90 /* AppIntent.swift */; };
+		7097BF4F2CE2355C00F4BB90 /* WidgetAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7097BF4E2CE2355C00F4BB90 /* WidgetAssets.xcassets */; };
+		7097BF532CE2355C00F4BB90 /* Imagica WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7097BF3F2CE2355B00F4BB90 /* Imagica WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		70BFAF262CF49B0A00AAC6EF /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFAF252CF49B0A00AAC6EF /* LaunchScreenView.swift */; };
+		70BFAF292CF4AB1E00AAC6EF /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFAF282CF4AB1E00AAC6EF /* HomeScreenView.swift */; };
+		70BFAF2B2CF4AB4200AAC6EF /* RecommendedCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFAF2A2CF4AB4200AAC6EF /* RecommendedCategoryView.swift */; };
+		70BFAF2D2CF4AB6400AAC6EF /* PreferredCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFAF2C2CF4AB6400AAC6EF /* PreferredCategoryView.swift */; };
+		70BFAF2F2CF4ABD300AAC6EF /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFAF2E2CF4ABD300AAC6EF /* NavigationBarView.swift */; };
+		70BFAF312CF4AC0E00AAC6EF /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFAF302CF4AC0E00AAC6EF /* TabbarView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7097BF512CE2355C00F4BB90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7097BF222CE2319D00F4BB90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7097BF3E2CE2355B00F4BB90;
+			remoteInfo = "Imagica WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7097BF572CE2355C00F4BB90 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7097BF532CE2355C00F4BB90 /* Imagica WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7097BF2A2CE2319D00F4BB90 /* Imagica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imagica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7097BF2D2CE2319D00F4BB90 /* ImagicaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagicaApp.swift; sourceTree = "<group>"; };
-		7097BF2F2CE2319D00F4BB90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7097BF2F2CE2319D00F4BB90 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7097BF312CE2319E00F4BB90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7097BF342CE2319E00F4BB90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7097BF3F2CE2355B00F4BB90 /* Imagica WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Imagica WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7097BF412CE2355B00F4BB90 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		7097BF432CE2355B00F4BB90 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7097BF462CE2355B00F4BB90 /* Imagica_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imagica_WidgetBundle.swift; sourceTree = "<group>"; };
+		7097BF482CE2355B00F4BB90 /* Imagica_WidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imagica_WidgetLiveActivity.swift; sourceTree = "<group>"; };
+		7097BF4A2CE2355B00F4BB90 /* Imagica_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imagica_Widget.swift; sourceTree = "<group>"; usesTabs = 0; };
+		7097BF4C2CE2355B00F4BB90 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		7097BF4E2CE2355C00F4BB90 /* WidgetAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WidgetAssets.xcassets; sourceTree = "<group>"; };
+		7097BF502CE2355C00F4BB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70BFAF252CF49B0A00AAC6EF /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		70BFAF282CF4AB1E00AAC6EF /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		70BFAF2A2CF4AB4200AAC6EF /* RecommendedCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCategoryView.swift; sourceTree = "<group>"; };
+		70BFAF2C2CF4AB6400AAC6EF /* PreferredCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredCategoryView.swift; sourceTree = "<group>"; };
+		70BFAF2E2CF4ABD300AAC6EF /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		70BFAF302CF4AC0E00AAC6EF /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +82,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7097BF3C2CE2355B00F4BB90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7097BF442CE2355B00F4BB90 /* SwiftUI.framework in Frameworks */,
+				7097BF422CE2355B00F4BB90 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				7097BF2C2CE2319D00F4BB90 /* Imagica */,
+				7097BF452CE2355B00F4BB90 /* Imagica Widget */,
+				7097BF402CE2355B00F4BB90 /* Frameworks */,
 				7097BF2B2CE2319D00F4BB90 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				7097BF2A2CE2319D00F4BB90 /* Imagica.app */,
+				7097BF3F2CE2355B00F4BB90 /* Imagica WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +116,12 @@
 		7097BF2C2CE2319D00F4BB90 /* Imagica */ = {
 			isa = PBXGroup;
 			children = (
+				70BFAF252CF49B0A00AAC6EF /* LaunchScreenView.swift */,
+				7097BF2F2CE2319D00F4BB90 /* HomeView.swift */,
+				70BFAF2E2CF4ABD300AAC6EF /* NavigationBarView.swift */,
+				70BFAF302CF4AC0E00AAC6EF /* TabbarView.swift */,
+				70BFAF272CF4AAE200AAC6EF /* HomeScreen */,
 				7097BF2D2CE2319D00F4BB90 /* ImagicaApp.swift */,
-				7097BF2F2CE2319D00F4BB90 /* ContentView.swift */,
 				7097BF312CE2319E00F4BB90 /* Assets.xcassets */,
 				7097BF332CE2319E00F4BB90 /* Preview Content */,
 			);
@@ -67,6 +136,38 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7097BF402CE2355B00F4BB90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7097BF412CE2355B00F4BB90 /* WidgetKit.framework */,
+				7097BF432CE2355B00F4BB90 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7097BF452CE2355B00F4BB90 /* Imagica Widget */ = {
+			isa = PBXGroup;
+			children = (
+				7097BF462CE2355B00F4BB90 /* Imagica_WidgetBundle.swift */,
+				7097BF482CE2355B00F4BB90 /* Imagica_WidgetLiveActivity.swift */,
+				7097BF4A2CE2355B00F4BB90 /* Imagica_Widget.swift */,
+				7097BF4C2CE2355B00F4BB90 /* AppIntent.swift */,
+				7097BF4E2CE2355C00F4BB90 /* WidgetAssets.xcassets */,
+				7097BF502CE2355C00F4BB90 /* Info.plist */,
+			);
+			path = "Imagica Widget";
+			sourceTree = "<group>";
+		};
+		70BFAF272CF4AAE200AAC6EF /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				70BFAF282CF4AB1E00AAC6EF /* HomeScreenView.swift */,
+				70BFAF2A2CF4AB4200AAC6EF /* RecommendedCategoryView.swift */,
+				70BFAF2C2CF4AB6400AAC6EF /* PreferredCategoryView.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +178,34 @@
 				7097BF262CE2319D00F4BB90 /* Sources */,
 				7097BF272CE2319D00F4BB90 /* Frameworks */,
 				7097BF282CE2319D00F4BB90 /* Resources */,
+				7097BF572CE2355C00F4BB90 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7097BF522CE2355C00F4BB90 /* PBXTargetDependency */,
 			);
 			name = Imagica;
 			productName = Imagica;
 			productReference = 7097BF2A2CE2319D00F4BB90 /* Imagica.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7097BF3E2CE2355B00F4BB90 /* Imagica WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7097BF542CE2355C00F4BB90 /* Build configuration list for PBXNativeTarget "Imagica WidgetExtension" */;
+			buildPhases = (
+				7097BF3B2CE2355B00F4BB90 /* Sources */,
+				7097BF3C2CE2355B00F4BB90 /* Frameworks */,
+				7097BF3D2CE2355B00F4BB90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Imagica WidgetExtension";
+			productName = "Imagica WidgetExtension";
+			productReference = 7097BF3F2CE2355B00F4BB90 /* Imagica WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +218,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					7097BF292CE2319D00F4BB90 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					7097BF3E2CE2355B00F4BB90 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -116,6 +239,7 @@
 			projectRoot = "";
 			targets = (
 				7097BF292CE2319D00F4BB90 /* Imagica */,
+				7097BF3E2CE2355B00F4BB90 /* Imagica WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +254,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7097BF3D2CE2355B00F4BB90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7097BF4F2CE2355C00F4BB90 /* WidgetAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +269,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7097BF302CE2319D00F4BB90 /* ContentView.swift in Sources */,
+				70BFAF2D2CF4AB6400AAC6EF /* PreferredCategoryView.swift in Sources */,
+				7097BF302CE2319D00F4BB90 /* HomeView.swift in Sources */,
+				70BFAF312CF4AC0E00AAC6EF /* TabbarView.swift in Sources */,
 				7097BF2E2CE2319D00F4BB90 /* ImagicaApp.swift in Sources */,
+				70BFAF262CF49B0A00AAC6EF /* LaunchScreenView.swift in Sources */,
+				70BFAF292CF4AB1E00AAC6EF /* HomeScreenView.swift in Sources */,
+				70BFAF2F2CF4ABD300AAC6EF /* NavigationBarView.swift in Sources */,
+				70BFAF2B2CF4AB4200AAC6EF /* RecommendedCategoryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7097BF3B2CE2355B00F4BB90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7097BF492CE2355B00F4BB90 /* Imagica_WidgetLiveActivity.swift in Sources */,
+				7097BF4D2CE2355B00F4BB90 /* AppIntent.swift in Sources */,
+				7097BF472CE2355B00F4BB90 /* Imagica_WidgetBundle.swift in Sources */,
+				7097BF4B2CE2355B00F4BB90 /* Imagica_Widget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7097BF522CE2355C00F4BB90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7097BF3E2CE2355B00F4BB90 /* Imagica WidgetExtension */;
+			targetProxy = 7097BF512CE2355C00F4BB90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7097BF362CE2319E00F4BB90 /* Debug */ = {
@@ -267,6 +424,7 @@
 		7097BF392CE2319E00F4BB90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -280,6 +438,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,6 +455,7 @@
 		7097BF3A2CE2319E00F4BB90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +469,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +477,62 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.symbol.Imagica;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7097BF552CE2355C00F4BB90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M8GY4WHWAQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Imagica Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Imagica Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.symbol.Imagica.Imagica-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7097BF562CE2355C00F4BB90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M8GY4WHWAQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Imagica Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Imagica Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.symbol.Imagica.Imagica-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +556,15 @@
 			buildConfigurations = (
 				7097BF392CE2319E00F4BB90 /* Debug */,
 				7097BF3A2CE2319E00F4BB90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7097BF542CE2355C00F4BB90 /* Build configuration list for PBXNativeTarget "Imagica WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7097BF552CE2355C00F4BB90 /* Debug */,
+				7097BF562CE2355C00F4BB90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
