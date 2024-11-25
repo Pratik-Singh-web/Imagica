@@ -30,7 +30,7 @@ struct RecommendedCategoryView: View {
                             .font(.headline)
                             .foregroundColor(.black)
                         
-                        Text("Explore the beauty of nature")
+                        Text("Explore the beauty of nature.")
                             .font(.subheadline)
                             .foregroundColor(.gray)
                             .multilineTextAlignment(.leading)
