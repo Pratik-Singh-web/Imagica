@@ -25,6 +25,8 @@
 		70BFAF2D2CF4AB6400AAC6EF /* PreferredCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFAF2C2CF4AB6400AAC6EF /* PreferredCategoryView.swift */; };
 		70BFAF2F2CF4ABD300AAC6EF /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFAF2E2CF4ABD300AAC6EF /* NavigationBarView.swift */; };
 		70BFAF312CF4AC0E00AAC6EF /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFAF302CF4AC0E00AAC6EF /* TabbarView.swift */; };
+		70EAA79E2DB4CE5100D491D2 /* CategoryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EAA79D2DB4CE4A00D491D2 /* CategoryScreenView.swift */; };
+		70EAA7A02DB4D3C600D491D2 /* CategoryImageScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EAA79F2DB4D3B800D491D2 /* CategoryImageScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		70BFAF2C2CF4AB6400AAC6EF /* PreferredCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredCategoryView.swift; sourceTree = "<group>"; };
 		70BFAF2E2CF4ABD300AAC6EF /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		70BFAF302CF4AC0E00AAC6EF /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		70EAA79D2DB4CE4A00D491D2 /* CategoryScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryScreenView.swift; sourceTree = "<group>"; };
+		70EAA79F2DB4D3B800D491D2 /* CategoryImageScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryImageScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 		7097BF2C2CE2319D00F4BB90 /* Imagica */ = {
 			isa = PBXGroup;
 			children = (
+				70EAA79C2DB4CE3E00D491D2 /* CategoryScreen */,
 				70BFAF252CF49B0A00AAC6EF /* LaunchScreenView.swift */,
 				7097BF2F2CE2319D00F4BB90 /* HomeView.swift */,
 				70BFAF2E2CF4ABD300AAC6EF /* NavigationBarView.swift */,
@@ -166,6 +171,15 @@
 				70BFAF2C2CF4AB6400AAC6EF /* PreferredCategoryView.swift */,
 			);
 			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		70EAA79C2DB4CE3E00D491D2 /* CategoryScreen */ = {
+			isa = PBXGroup;
+			children = (
+				70EAA79F2DB4D3B800D491D2 /* CategoryImageScreenView.swift */,
+				70EAA79D2DB4CE4A00D491D2 /* CategoryScreenView.swift */,
+			);
+			path = CategoryScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70EAA7A02DB4D3C600D491D2 /* CategoryImageScreenView.swift in Sources */,
 				70BFAF2D2CF4AB6400AAC6EF /* PreferredCategoryView.swift in Sources */,
 				7097BF302CE2319D00F4BB90 /* HomeView.swift in Sources */,
+				70EAA79E2DB4CE5100D491D2 /* CategoryScreenView.swift in Sources */,
 				70BFAF312CF4AC0E00AAC6EF /* TabbarView.swift in Sources */,
 				7097BF2E2CE2319D00F4BB90 /* ImagicaApp.swift in Sources */,
 				70BFAF262CF49B0A00AAC6EF /* LaunchScreenView.swift in Sources */,
@@ -430,7 +446,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Imagica/Preview Content\"";
-				DEVELOPMENT_TEAM = M8GY4WHWAQ;
+				DEVELOPMENT_TEAM = VQH2R2WSFU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -461,7 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Imagica/Preview Content\"";
-				DEVELOPMENT_TEAM = M8GY4WHWAQ;
+				DEVELOPMENT_TEAM = VQH2R2WSFU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -490,7 +506,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M8GY4WHWAQ;
+				DEVELOPMENT_TEAM = VQH2R2WSFU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Imagica Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Imagica Widget";
@@ -518,7 +534,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M8GY4WHWAQ;
+				DEVELOPMENT_TEAM = VQH2R2WSFU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Imagica Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Imagica Widget";

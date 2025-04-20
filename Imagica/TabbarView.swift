@@ -9,42 +9,25 @@ import SwiftUI
 
 struct TabbarView: View {
     var body: some View {
-        HStack {
-            Spacer()
-            VStack {
-                Image(systemName: "house.fill")
-                    .font(.system(size: 20))
-                Text("Home")
-                    .font(.caption)
-            }
-            .tint(.gray)
-            Spacer()
-            Spacer()
-            Spacer()
+        TabView {
+            HomeScreenView()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
             
-            VStack {
-                Image(systemName: "square.grid.2x2.fill")
-                    .font(.system(size: 20))
-                Text("Categories")
-                    .font(.caption)
-            }
-            .tint(.gray)
-            Spacer()
-            Spacer()
-            Spacer()
+            CategoryScreenView()
+                .tabItem {
+                    Image(systemName: "square.grid.2x2.fill")
+                    Text("Categories")
+                }
             
-            VStack {
-                Image(systemName: "person.crop.circle")
-                    .font(.system(size: 20))
-                Text("Profile")
-                    .font(.caption)
-            }
-            .tint(.gray)
-            Spacer()
+            Text("Profile Screen")
+                .tabItem {
+                    Image(systemName: "person.crop.circle")
+                    Text("Profile")
+                }
         }
-        .padding()
-        .background(Color.white)
-        .shadow(color: .gray.opacity(0.3), radius: 10, x: 0, y: -2)
     }
 }
 

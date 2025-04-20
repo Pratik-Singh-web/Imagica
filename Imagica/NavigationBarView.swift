@@ -28,13 +28,13 @@ struct NavigationBarView: View {
             
             Spacer()
             
-            Button(action: {
-                // Add action for profile button
-            }) {
-                Image(systemName: "person.crop.circle")
-                    .font(.system(size: 20))
-                    .foregroundColor(.black)
-            }
+//            Button(action: {
+//                // Add action for profile button
+//            }) {
+//                Image(systemName: "person.crop.circle")
+//                    .font(.system(size: 20))
+//                    .foregroundColor(.black)
+//            }
         }
         .padding(.horizontal)
         .padding(.top, 10)

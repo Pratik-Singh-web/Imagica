@@ -12,7 +12,7 @@ struct HomeScreenView: View {
         ScrollView {
             VStack(spacing: 20){
                 // Preferred Category Section
-                PreferredCategoryView()
+                PreferredCategoryView(preferredCategory: selectedCategory ?? Category(name: "Nature", imageName: "nature"))
                 
                 // Recommended Categories Section
                 RecommendedCategoryView()

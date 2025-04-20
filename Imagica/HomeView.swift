@@ -18,10 +18,6 @@ struct HomeView: View {
                 // Navigation Bar
                 NavigationBarView()
                 
-                //Home Screen
-                HomeScreenView()
-                Spacer()
-                
                 // Tab Bar
                 TabbarView()
             }

@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct PreferredCategoryView: View {
+    var preferredCategory: Category
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("Preferred Category: Nature")
+            Text("Preferred Category: \(preferredCategory.name)")
                 .font(.title3)
                 .fontWeight(.bold)
                 .foregroundColor(.black)
             
-            Image("Myself") // Replace with your image name
+            Image(preferredCategory.imageName) // Replace with your image name
                 .resizable()
                 .scaledToFill()
                 .frame(height: 250)
@@ -27,5 +29,5 @@ struct PreferredCategoryView: View {
 }
 
 #Preview {
-    PreferredCategoryView()
+    PreferredCategoryView(preferredCategory: Category(name: "Nature", imageName: "nature"))
 }
